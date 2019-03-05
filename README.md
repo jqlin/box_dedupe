@@ -2,7 +2,7 @@
 box_dedupe deduplicates folders and files in Box with same name. 
 
 # Motivation
-Uploading files using Box via FTP is a common way to bulk transfer files to Box. When using multiple FTP transfers, a race condition can occur resulting in duplicated folder names. Content will be split between the folders with the same names. This creates difficulties in accessing files through FTP (as only one duplicated folder can be stepped into) and general confusion as duplicate names is not allowed typically. box_dedupe aims to deduplicate and combine the folders. 
+Uploading files using Box via FTP is a common way to bulk transfer files to Box. When using multiple FTP transfers, a race condition can occur resulting in duplicated folder names. Content will be split between the folders with the same name. This creates difficulties in accessing files through FTP (as only one duplicated folder can be stepped into) and general confusion as duplicate names are not allowed typically. box_dedupe aims to deduplicate and combine the folders. 
 
 # Usage
 1. Install `boxsdk` and `bottle`.   
@@ -14,7 +14,8 @@ pip install boxsdk bottle
 client_id = 'YOUR ID'
 client_secret = 'YOUR SECRET'
 ```
-3. Edit box_dedupe.py `FOLDER_ID` with desired starting directory. Use 0 for `All Files`. 
+3. Edit `box_dedupe.py` `FOLDER_ID` with desired starting directory. Use `0` for `All Files`. 
+4. Run `box_dedupe.py`
 
 # Renames
 Files or folders will be renamed in some circumstances. The following prefixes are used:  
