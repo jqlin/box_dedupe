@@ -18,7 +18,7 @@ client_secret = 'YOUR SECRET'
 4. Run `box_dedupe.py`
 
 # Renames
-Files or folders will be renamed in some circumstances. The following prefixes are used:  
+Files or folders will be renamed in some circumstances. The following suffixes are used:  
 * `.dYYYY-MM-DD HH:MM:SS` - when moving a file, file with same name exists at destination but different SHA1. File is renamed and moved.
 * `.dFoYYYY-MM-DD HH:MM:SS` - when moving a file, folder with same name exists at destination. File is renamed and moved.
 * `.dFiYYYY-MM-DD HH:MM:SS` - when moving an empty folder, file with same name exists at destination. Folder is renamed and moved.
